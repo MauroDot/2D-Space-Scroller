@@ -12,9 +12,20 @@ public class EnemyController : MonoBehaviour
     public float _changeDirectionXPoint;
     public Vector2 _changedDirection;
 
+    public GameObject _shotToFire;
+    public Transform _firePoint;
+    public float _timeBetweenShots;
+    private float _shotCounter;
+
+    public bool _canShoot;
+    private bool _allowShooting;
+
+    public int _currentHealth;
+    public GameObject _deathEffect;
+
     void Start()
     {
-        
+        _shotCounter = _timeBetweenShots;
     }
     void Update()
     {
@@ -35,10 +46,36 @@ public class EnemyController : MonoBehaviour
                 transform.position += new Vector3(_changedDirection.x * _moveSpeed * Time.deltaTime, _changedDirection.y * _moveSpeed * Time.deltaTime, 0f);
             }
         }
+
+        if(_allowShooting)
+        {
+            _shotCounter -= Time.deltaTime;
+            if (_shotCounter <= 0)
+            {
+                _shotCounter = _timeBetweenShots;
+                Instantiate(_shotToFire, _firePoint.position, _firePoint.rotation);
+            }
+        }       
     }
 
+    public void DamageEnemy()
+    {
+        _currentHealth--;
+        if(_currentHealth <= 0)
+        {
+            Destroy(gameObject);
+            Instantiate(_deathEffect, transform.position, transform.rotation);
+        }
+    }
     private void OnBecameInvisible()
     {
         Destroy(gameObject);
+    }
+    private void OnBecameVisible()
+    {
+        if(_canShoot)
+        {
+            _allowShooting = true;
+        }
     }
 }
