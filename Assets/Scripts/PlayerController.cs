@@ -42,4 +42,8 @@ public class PlayerController : MonoBehaviour
             }          
         }
     }
+    public void ApplyExternalForce(Vector2 force)
+    {
+        _theRB.AddForce(force);
+    }
 }
