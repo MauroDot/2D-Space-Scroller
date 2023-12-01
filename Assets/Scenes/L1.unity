@@ -1935,7 +1935,7 @@ Transform:
   m_GameObject: {fileID: 1011746443}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 1, w: 0}
-  m_LocalPosition: {x: 8.8886, y: 4.9998, z: -0.019010372}
+  m_LocalPosition: {x: 2.95, y: 4.9998, z: -0.019010372}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3504,7 +3504,7 @@ Transform:
   m_GameObject: {fileID: 1963382339}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 4.78, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3523,14 +3523,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _waves:
-  - _timeToSpawn: 2
+  - _timeToSpawn: 1
     _theWave: {fileID: 69161084589810210, guid: aed98c3b3b54a8e4fa53735dfd7dac9d, type: 3}
+  - _timeToSpawn: 5
+    _theWave: {fileID: 1331913730840830793, guid: 181c17e4970c26c49bf746dd2883d1c3, type: 3}
+  - _timeToSpawn: 10
+    _theWave: {fileID: -8111491579377865762, guid: 3d864e7340d645d4ba9ce6558c22baf9, type: 3}
   - _timeToSpawn: 15
-    _theWave: {fileID: 1331913730840830793, guid: 181c17e4970c26c49bf746dd2883d1c3, type: 3}
-  - _timeToSpawn: 30
-    _theWave: {fileID: 69161084589810210, guid: aed98c3b3b54a8e4fa53735dfd7dac9d, type: 3}
-  - _timeToSpawn: 60
-    _theWave: {fileID: 1331913730840830793, guid: 181c17e4970c26c49bf746dd2883d1c3, type: 3}
+    _theWave: {fileID: 4104468983268216278, guid: 1212f6717853d2343b70257bf9eb13f5, type: 3}
+  - _timeToSpawn: 15
+    _theWave: {fileID: 4230528023978788544, guid: 1fea94e91fa9a01418c8cbe6873faa09, type: 3}
   _currentWave: 0
   _canSpawnWaves: 1
   _timeToNextWave: 0
@@ -3668,7 +3670,7 @@ MonoBehaviour:
   topRightLimit: {fileID: 1011746444}
   _shotPoint: {fileID: 653596835}
   _shot: {fileID: 4415740856552439684, guid: 39caf485fabf8a0419509abb251f4639, type: 3}
-  _timeBetweenShots: 0.5
+  _timeBetweenShots: 0.1
 --- !u!58 &2004835199
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -3717,7 +3719,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _currentHealth: 0
-  _maxHealth: 3
+  _maxHealth: 25
   _deathEffect: {fileID: 210971239670690142, guid: abc983efd433850408b90dd36bdd9563, type: 3}
 --- !u!1 &2013797941
 GameObject:
@@ -4248,7 +4250,7 @@ Transform:
   m_GameObject: {fileID: 2125147945}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -8.887, y: -4.9982, z: -0.019010372}
+  m_LocalPosition: {x: -5.46, y: -4.9982, z: -0.019010372}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4264,11 +4266,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6951553535735338083, guid: e2e15b0d3a8bd7a48bddd2823c68ae5d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 24.01
+      value: 19.04
       objectReference: {fileID: 0}
     - target: {fileID: 6951553535735338083, guid: e2e15b0d3a8bd7a48bddd2823c68ae5d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.25
+      value: 2.03
       objectReference: {fileID: 0}
     - target: {fileID: 6951553535735338083, guid: e2e15b0d3a8bd7a48bddd2823c68ae5d, type: 3}
       propertyPath: m_LocalPosition.z

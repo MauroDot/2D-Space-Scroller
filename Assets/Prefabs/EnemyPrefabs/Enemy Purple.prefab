@@ -189,13 +189,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _moveSpeed: 3
-  _startDirection: {x: -0.5, y: 0.25}
+  _startDirection: {x: -1, y: 0}
   _shouldChangeDirection: 1
   _changeDirectionXPoint: 0
-  _changedDirection: {x: -0.5, y: -0.25}
+  _changedDirection: {x: -0.8, y: 0.5}
   _shotToFire: {fileID: 7788343238093272032, guid: 39d32c5a4af0014428769c43d4ebd17e, type: 3}
   _firePoint: {fileID: 4061260656026381732}
-  _timeBetweenShots: 1
+  _timeBetweenShots: 2
   _canShoot: 1
   _currentHealth: 3
   _deathEffect: {fileID: 3693241669437665348, guid: 96166b6522230b249b7ceb500da1a3ab, type: 3}
