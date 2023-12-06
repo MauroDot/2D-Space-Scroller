@@ -23,6 +23,8 @@ public class EnemyController : MonoBehaviour
     public int _currentHealth;
     public GameObject _deathEffect;
 
+    public int _scoreValue = 100;
+
     void Start()
     {
         _shotCounter = _timeBetweenShots;
@@ -63,6 +65,8 @@ public class EnemyController : MonoBehaviour
         _currentHealth--;
         if(_currentHealth <= 0)
         {
+            GameManager.instance.AddScore(_scoreValue);
+
             Destroy(gameObject);
             Instantiate(_deathEffect, transform.position, transform.rotation);
         }
