@@ -12,6 +12,9 @@ public class HealthManager : MonoBehaviour
     public float _invincibilityTime = 2f;
     private float _invincCounter;
     public SpriteRenderer _theSR;
+    public int shieldPwr;
+    public int shieldMaxPwr = 2;
+    public GameObject _theSield;
 
     private void Awake()
     {
@@ -24,6 +27,8 @@ public class HealthManager : MonoBehaviour
 
         UIManager.instance._healthBar.maxValue = _maxHealth;
         UIManager.instance._healthBar.value = _currentHealth;
+        UIManager.instance._shieldBar.maxValue = shieldMaxPwr;
+        UIManager.instance._shieldBar.value = shieldPwr;
     }
 
     void Update()
@@ -41,20 +46,33 @@ public class HealthManager : MonoBehaviour
 
     public void DamagePlayer()
     {
-        if(_invincCounter <= 0)
+        if(_theSield.activeInHierarchy)
         {
-            _currentHealth--;
-            UIManager.instance._healthBar.value = _currentHealth;
+            shieldPwr--;
 
-            if (_currentHealth <= 0)
+            if(shieldPwr <=0)
             {
-                Instantiate(_deathEffect, transform.position, transform.rotation);
-                gameObject.SetActive(false);
-
-                GameManager.instance.KillPlayer();
-                WaveManager.instance._canSpawnWaves = false;
+                _theSield.SetActive(false);
             }
-        }       
+            UIManager.instance._shieldBar.value = shieldPwr;
+        }
+        else
+        {
+            if (_invincCounter <= 0)
+            {
+                _currentHealth--;
+                UIManager.instance._healthBar.value = _currentHealth;
+
+                if (_currentHealth <= 0)
+                {
+                    Instantiate(_deathEffect, transform.position, transform.rotation);
+                    gameObject.SetActive(false);
+
+                    GameManager.instance.KillPlayer();
+                    WaveManager.instance._canSpawnWaves = false;
+                }
+            }
+        }
     }
     public void Respawn()
     {
@@ -64,5 +82,13 @@ public class HealthManager : MonoBehaviour
 
         _invincCounter = _invincibilityTime;
         _theSR.color = new Color(_theSR.color.r, _theSR.color.g, _theSR.color.b, .5f);
+    }
+
+    public void AcitvateShield()
+    {
+        _theSield.SetActive(true);
+        shieldPwr = shieldMaxPwr;
+
+        UIManager.instance._shieldBar.value = shieldPwr;
     }
 }

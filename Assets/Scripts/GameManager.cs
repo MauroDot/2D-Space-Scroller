@@ -6,21 +6,25 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
 
-    public int _currentLives = 5;
-
+    public int _currentLives = 3;
     public float _respawnTime = 1f;
-
     public int _currentScore;
+
+    private int highScore;
 
     public void Awake()
     {
         instance = this;
+
+        // Load high score at the beginning
+        highScore = PlayerPrefs.GetInt("HighScore", 0); // Default to 0 if not set
     }
+
     private void Start()
     {
         UIManager.instance._livesText.text = "x " + _currentLives;
-
         UIManager.instance._scoreText.text = "Score: " + _currentScore;
+        UIManager.instance.hiScoreText.text = "Hi-Score: " + highScore;
     }
     public void KillPlayer()
     {
@@ -48,5 +52,14 @@ public class GameManager : MonoBehaviour
     {
         _currentScore += scoreToAdd;
         UIManager.instance._scoreText.text = "Score: " + _currentScore;
+
+        if (_currentScore > highScore)
+        {
+            highScore = _currentScore;
+            UIManager.instance.hiScoreText.text = "Hi-Score: " + highScore;
+
+            // Save the new high score
+            PlayerPrefs.SetInt("HighScore", highScore);
+        }
     }
 }

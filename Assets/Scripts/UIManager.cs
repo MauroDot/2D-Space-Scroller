@@ -12,16 +12,12 @@ public class UIManager : MonoBehaviour
 
     public Text _livesText;
 
-    public Slider _healthBar;
+    public Slider _healthBar, _shieldBar;
 
-    public Text _scoreText;
-    void Start()
+    public Text _scoreText, hiScoreText;
+    private void Awake()
     {
         instance = this;
-    }
-    void Update()
-    {
-        
     }
     public void Restart()
     {
