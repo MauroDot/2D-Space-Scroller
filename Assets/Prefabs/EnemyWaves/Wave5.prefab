@@ -168,6 +168,12 @@ MonoBehaviour:
   _canShoot: 1
   _currentHealth: 5
   _deathEffect: {fileID: 3693241669437665348, guid: 96166b6522230b249b7ceb500da1a3ab, type: 3}
+  _scoreValue: 100
+  _powerUps:
+  - {fileID: 4234789934269834745, guid: 04ba5a009872acf4ca05f2389cee3b6c, type: 3}
+  - {fileID: 5365586140640970940, guid: 6ff1722f307823f4c9c9df800d16058f, type: 3}
+  - {fileID: 661498064537979420, guid: 84f4fd658c7fdeb44824e84c7db3b3a7, type: 3}
+  _powerupDropRate: 50
 --- !u!1 &657656394503796348
 GameObject:
   m_ObjectHideFlags: 0
@@ -398,6 +404,12 @@ MonoBehaviour:
   _canShoot: 1
   _currentHealth: 5
   _deathEffect: {fileID: 3693241669437665348, guid: 96166b6522230b249b7ceb500da1a3ab, type: 3}
+  _scoreValue: 100
+  _powerUps:
+  - {fileID: 4234789934269834745, guid: 04ba5a009872acf4ca05f2389cee3b6c, type: 3}
+  - {fileID: 5365586140640970940, guid: 6ff1722f307823f4c9c9df800d16058f, type: 3}
+  - {fileID: 661498064537979420, guid: 84f4fd658c7fdeb44824e84c7db3b3a7, type: 3}
+  _powerupDropRate: 50
 --- !u!1 &1030048812875032639
 GameObject:
   m_ObjectHideFlags: 0
@@ -566,6 +578,12 @@ MonoBehaviour:
   _canShoot: 1
   _currentHealth: 5
   _deathEffect: {fileID: 3693241669437665348, guid: 96166b6522230b249b7ceb500da1a3ab, type: 3}
+  _scoreValue: 100
+  _powerUps:
+  - {fileID: 4234789934269834745, guid: 04ba5a009872acf4ca05f2389cee3b6c, type: 3}
+  - {fileID: 5365586140640970940, guid: 6ff1722f307823f4c9c9df800d16058f, type: 3}
+  - {fileID: 661498064537979420, guid: 84f4fd658c7fdeb44824e84c7db3b3a7, type: 3}
+  _powerupDropRate: 50
 --- !u!1 &1260560213397159815
 GameObject:
   m_ObjectHideFlags: 0
@@ -765,6 +783,12 @@ MonoBehaviour:
   _canShoot: 1
   _currentHealth: 5
   _deathEffect: {fileID: 3693241669437665348, guid: 96166b6522230b249b7ceb500da1a3ab, type: 3}
+  _scoreValue: 100
+  _powerUps:
+  - {fileID: 4234789934269834745, guid: 04ba5a009872acf4ca05f2389cee3b6c, type: 3}
+  - {fileID: 5365586140640970940, guid: 6ff1722f307823f4c9c9df800d16058f, type: 3}
+  - {fileID: 661498064537979420, guid: 84f4fd658c7fdeb44824e84c7db3b3a7, type: 3}
+  _powerupDropRate: 50
 --- !u!1 &1610742575667733612
 GameObject:
   m_ObjectHideFlags: 0
@@ -995,6 +1019,12 @@ MonoBehaviour:
   _canShoot: 1
   _currentHealth: 5
   _deathEffect: {fileID: 3693241669437665348, guid: 96166b6522230b249b7ceb500da1a3ab, type: 3}
+  _scoreValue: 100
+  _powerUps:
+  - {fileID: 4234789934269834745, guid: 04ba5a009872acf4ca05f2389cee3b6c, type: 3}
+  - {fileID: 5365586140640970940, guid: 6ff1722f307823f4c9c9df800d16058f, type: 3}
+  - {fileID: 661498064537979420, guid: 84f4fd658c7fdeb44824e84c7db3b3a7, type: 3}
+  _powerupDropRate: 50
 --- !u!1 &1969449756645100532
 GameObject:
   m_ObjectHideFlags: 0
@@ -1163,6 +1193,12 @@ MonoBehaviour:
   _canShoot: 1
   _currentHealth: 5
   _deathEffect: {fileID: 3693241669437665348, guid: 96166b6522230b249b7ceb500da1a3ab, type: 3}
+  _scoreValue: 100
+  _powerUps:
+  - {fileID: 4234789934269834745, guid: 04ba5a009872acf4ca05f2389cee3b6c, type: 3}
+  - {fileID: 5365586140640970940, guid: 6ff1722f307823f4c9c9df800d16058f, type: 3}
+  - {fileID: 661498064537979420, guid: 84f4fd658c7fdeb44824e84c7db3b3a7, type: 3}
+  _powerupDropRate: 50
 --- !u!1 &1997968911153551125
 GameObject:
   m_ObjectHideFlags: 0
@@ -1331,6 +1367,12 @@ MonoBehaviour:
   _canShoot: 1
   _currentHealth: 5
   _deathEffect: {fileID: 3693241669437665348, guid: 96166b6522230b249b7ceb500da1a3ab, type: 3}
+  _scoreValue: 100
+  _powerUps:
+  - {fileID: 4234789934269834745, guid: 04ba5a009872acf4ca05f2389cee3b6c, type: 3}
+  - {fileID: 5365586140640970940, guid: 6ff1722f307823f4c9c9df800d16058f, type: 3}
+  - {fileID: 661498064537979420, guid: 84f4fd658c7fdeb44824e84c7db3b3a7, type: 3}
+  _powerupDropRate: 50
 --- !u!1 &2895879981957568542
 GameObject:
   m_ObjectHideFlags: 0
@@ -1530,6 +1572,12 @@ MonoBehaviour:
   _canShoot: 1
   _currentHealth: 5
   _deathEffect: {fileID: 3693241669437665348, guid: 96166b6522230b249b7ceb500da1a3ab, type: 3}
+  _scoreValue: 100
+  _powerUps:
+  - {fileID: 4234789934269834745, guid: 04ba5a009872acf4ca05f2389cee3b6c, type: 3}
+  - {fileID: 5365586140640970940, guid: 6ff1722f307823f4c9c9df800d16058f, type: 3}
+  - {fileID: 661498064537979420, guid: 84f4fd658c7fdeb44824e84c7db3b3a7, type: 3}
+  _powerupDropRate: 50
 --- !u!1 &4707305947678395027
 GameObject:
   m_ObjectHideFlags: 0
@@ -1729,6 +1777,12 @@ MonoBehaviour:
   _canShoot: 1
   _currentHealth: 5
   _deathEffect: {fileID: 3693241669437665348, guid: 96166b6522230b249b7ceb500da1a3ab, type: 3}
+  _scoreValue: 100
+  _powerUps:
+  - {fileID: 4234789934269834745, guid: 04ba5a009872acf4ca05f2389cee3b6c, type: 3}
+  - {fileID: 5365586140640970940, guid: 6ff1722f307823f4c9c9df800d16058f, type: 3}
+  - {fileID: 661498064537979420, guid: 84f4fd658c7fdeb44824e84c7db3b3a7, type: 3}
+  _powerupDropRate: 50
 --- !u!1 &4901567887551007404
 GameObject:
   m_ObjectHideFlags: 0
@@ -1897,6 +1951,12 @@ MonoBehaviour:
   _canShoot: 1
   _currentHealth: 5
   _deathEffect: {fileID: 3693241669437665348, guid: 96166b6522230b249b7ceb500da1a3ab, type: 3}
+  _scoreValue: 100
+  _powerUps:
+  - {fileID: 4234789934269834745, guid: 04ba5a009872acf4ca05f2389cee3b6c, type: 3}
+  - {fileID: 5365586140640970940, guid: 6ff1722f307823f4c9c9df800d16058f, type: 3}
+  - {fileID: 661498064537979420, guid: 84f4fd658c7fdeb44824e84c7db3b3a7, type: 3}
+  _powerupDropRate: 50
 --- !u!1 &5061831985446588690
 GameObject:
   m_ObjectHideFlags: 0
@@ -2096,6 +2156,12 @@ MonoBehaviour:
   _canShoot: 1
   _currentHealth: 5
   _deathEffect: {fileID: 3693241669437665348, guid: 96166b6522230b249b7ceb500da1a3ab, type: 3}
+  _scoreValue: 100
+  _powerUps:
+  - {fileID: 4234789934269834745, guid: 04ba5a009872acf4ca05f2389cee3b6c, type: 3}
+  - {fileID: 5365586140640970940, guid: 6ff1722f307823f4c9c9df800d16058f, type: 3}
+  - {fileID: 661498064537979420, guid: 84f4fd658c7fdeb44824e84c7db3b3a7, type: 3}
+  _powerupDropRate: 50
 --- !u!1 &5173255343447135631
 GameObject:
   m_ObjectHideFlags: 0
@@ -2295,6 +2361,12 @@ MonoBehaviour:
   _canShoot: 1
   _currentHealth: 5
   _deathEffect: {fileID: 3693241669437665348, guid: 96166b6522230b249b7ceb500da1a3ab, type: 3}
+  _scoreValue: 100
+  _powerUps:
+  - {fileID: 4234789934269834745, guid: 04ba5a009872acf4ca05f2389cee3b6c, type: 3}
+  - {fileID: 5365586140640970940, guid: 6ff1722f307823f4c9c9df800d16058f, type: 3}
+  - {fileID: 661498064537979420, guid: 84f4fd658c7fdeb44824e84c7db3b3a7, type: 3}
+  _powerupDropRate: 50
 --- !u!1 &5566591520444968344
 GameObject:
   m_ObjectHideFlags: 0
@@ -2556,6 +2628,12 @@ MonoBehaviour:
   _canShoot: 1
   _currentHealth: 5
   _deathEffect: {fileID: 3693241669437665348, guid: 96166b6522230b249b7ceb500da1a3ab, type: 3}
+  _scoreValue: 100
+  _powerUps:
+  - {fileID: 4234789934269834745, guid: 04ba5a009872acf4ca05f2389cee3b6c, type: 3}
+  - {fileID: 5365586140640970940, guid: 6ff1722f307823f4c9c9df800d16058f, type: 3}
+  - {fileID: 661498064537979420, guid: 84f4fd658c7fdeb44824e84c7db3b3a7, type: 3}
+  _powerupDropRate: 50
 --- !u!1 &7080560030997655743
 GameObject:
   m_ObjectHideFlags: 0
@@ -2724,6 +2802,12 @@ MonoBehaviour:
   _canShoot: 1
   _currentHealth: 5
   _deathEffect: {fileID: 3693241669437665348, guid: 96166b6522230b249b7ceb500da1a3ab, type: 3}
+  _scoreValue: 100
+  _powerUps:
+  - {fileID: 4234789934269834745, guid: 04ba5a009872acf4ca05f2389cee3b6c, type: 3}
+  - {fileID: 5365586140640970940, guid: 6ff1722f307823f4c9c9df800d16058f, type: 3}
+  - {fileID: 661498064537979420, guid: 84f4fd658c7fdeb44824e84c7db3b3a7, type: 3}
+  _powerupDropRate: 50
 --- !u!1 &7536694043528243493
 GameObject:
   m_ObjectHideFlags: 0
@@ -2923,6 +3007,12 @@ MonoBehaviour:
   _canShoot: 1
   _currentHealth: 5
   _deathEffect: {fileID: 3693241669437665348, guid: 96166b6522230b249b7ceb500da1a3ab, type: 3}
+  _scoreValue: 100
+  _powerUps:
+  - {fileID: 4234789934269834745, guid: 04ba5a009872acf4ca05f2389cee3b6c, type: 3}
+  - {fileID: 5365586140640970940, guid: 6ff1722f307823f4c9c9df800d16058f, type: 3}
+  - {fileID: 661498064537979420, guid: 84f4fd658c7fdeb44824e84c7db3b3a7, type: 3}
+  _powerupDropRate: 50
 --- !u!1 &7652057862397411647
 GameObject:
   m_ObjectHideFlags: 0
@@ -3245,6 +3335,12 @@ MonoBehaviour:
   _canShoot: 1
   _currentHealth: 5
   _deathEffect: {fileID: 3693241669437665348, guid: 96166b6522230b249b7ceb500da1a3ab, type: 3}
+  _scoreValue: 100
+  _powerUps:
+  - {fileID: 4234789934269834745, guid: 04ba5a009872acf4ca05f2389cee3b6c, type: 3}
+  - {fileID: 5365586140640970940, guid: 6ff1722f307823f4c9c9df800d16058f, type: 3}
+  - {fileID: 661498064537979420, guid: 84f4fd658c7fdeb44824e84c7db3b3a7, type: 3}
+  _powerupDropRate: 50
 --- !u!1 &8764022920293305188
 GameObject:
   m_ObjectHideFlags: 0
@@ -3444,3 +3540,9 @@ MonoBehaviour:
   _canShoot: 1
   _currentHealth: 5
   _deathEffect: {fileID: 3693241669437665348, guid: 96166b6522230b249b7ceb500da1a3ab, type: 3}
+  _scoreValue: 100
+  _powerUps:
+  - {fileID: 4234789934269834745, guid: 04ba5a009872acf4ca05f2389cee3b6c, type: 3}
+  - {fileID: 5365586140640970940, guid: 6ff1722f307823f4c9c9df800d16058f, type: 3}
+  - {fileID: 661498064537979420, guid: 84f4fd658c7fdeb44824e84c7db3b3a7, type: 3}
+  _powerupDropRate: 50

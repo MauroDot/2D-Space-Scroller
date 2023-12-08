@@ -39,6 +39,8 @@ public class GameManager : MonoBehaviour
         {
             UIManager.instance._gameOverScreen.SetActive(true);
             WaveManager.instance._canSpawnWaves = false;
+
+            MusicController.instance.PlayGameOver();
         }
     }
     public IEnumerator RespawnCO()
@@ -47,7 +49,6 @@ public class GameManager : MonoBehaviour
         HealthManager.instance.Respawn();
         WaveManager.instance.ContinueSpawning();
     }
-
     public void AddScore(int scoreToAdd)
     {
         _currentScore += scoreToAdd;
@@ -61,5 +62,10 @@ public class GameManager : MonoBehaviour
             // Save the new high score
             PlayerPrefs.SetInt("HighScore", highScore);
         }
+    }
+    public IEnumerator EndLevelCO()
+    {
+        UIManager.instance._levelEndScreen.SetActive(true);
+        yield return new WaitForSeconds(.1f);
     }
 }

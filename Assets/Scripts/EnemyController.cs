@@ -25,6 +25,8 @@ public class EnemyController : MonoBehaviour
 
     public int _scoreValue = 100;
 
+    public GameObject[] _powerUps;
+    public int _powerupDropRate = 50;
     void Start()
     {
         _shotCounter = _timeBetweenShots;
@@ -67,6 +69,13 @@ public class EnemyController : MonoBehaviour
         {
             GameManager.instance.AddScore(_scoreValue);
 
+            int randomCahnce = Random.Range(0, 100);
+            if(randomCahnce < _powerupDropRate)
+            {
+                int randomPick = Random.Range(0, _powerUps.Length);
+                Instantiate(_powerUps[randomPick], transform.position, transform.rotation);
+            }
+            
             Destroy(gameObject);
             Instantiate(_deathEffect, transform.position, transform.rotation);
         }

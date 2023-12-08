@@ -168,6 +168,12 @@ MonoBehaviour:
   _canShoot: 1
   _currentHealth: 3
   _deathEffect: {fileID: 3693241669437665348, guid: 96166b6522230b249b7ceb500da1a3ab, type: 3}
+  _scoreValue: 100
+  _powerUps:
+  - {fileID: 661498064537979420, guid: 84f4fd658c7fdeb44824e84c7db3b3a7, type: 3}
+  - {fileID: 5365586140640970940, guid: 6ff1722f307823f4c9c9df800d16058f, type: 3}
+  - {fileID: 4234789934269834745, guid: 04ba5a009872acf4ca05f2389cee3b6c, type: 3}
+  _powerupDropRate: 50
 --- !u!1 &4885666043224797909
 GameObject:
   m_ObjectHideFlags: 0

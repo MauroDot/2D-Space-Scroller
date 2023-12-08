@@ -5,6 +5,8 @@ using UnityEngine;
 public class PowerUp : MonoBehaviour
 {
     public bool _isShield;
+    public bool _isBoost;
+    public bool _isDoubleShot;
 
     // Start is called before the first frame update
     void Start()
@@ -27,6 +29,16 @@ public class PowerUp : MonoBehaviour
             if(_isShield)
             {
                 HealthManager.instance.AcitvateShield();
+            }
+
+            if(_isBoost)
+            {
+                PlayerController.instance.ActivateSpeedBoost();
+            }
+
+            if(_isDoubleShot)
+            {
+                PlayerController.instance._DoubleShotActive = true;
             }
         }
     }
