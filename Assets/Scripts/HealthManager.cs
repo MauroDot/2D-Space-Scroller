@@ -33,11 +33,11 @@ public class HealthManager : MonoBehaviour
 
     void Update()
     {
-        if(_invincCounter >= 0)
+        if (_invincCounter >= 0)
         {
             _invincCounter -= Time.deltaTime;
 
-            if(_invincCounter <= 0)
+            if (_invincCounter <= 0)
             {
                 _theSR.color = new Color(_theSR.color.r, _theSR.color.g, _theSR.color.b, 1f);
             }
@@ -46,11 +46,11 @@ public class HealthManager : MonoBehaviour
 
     public void DamagePlayer()
     {
-        if(_theSield.activeInHierarchy)
+        if (_theSield.activeInHierarchy)
         {
             shieldPwr--;
 
-            if(shieldPwr <=0)
+            if (shieldPwr <= 0)
             {
                 _theSield.SetActive(false);
             }

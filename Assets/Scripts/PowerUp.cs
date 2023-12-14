@@ -11,32 +11,32 @@ public class PowerUp : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if(other.tag == "Player")
+        if (other.tag == "Player")
         {
             Destroy(gameObject);
 
-            if(_isShield)
+            if (_isShield)
             {
                 HealthManager.instance.AcitvateShield();
             }
 
-            if(_isBoost)
+            if (_isBoost)
             {
                 PlayerController.instance.ActivateSpeedBoost();
             }
 
-            if(_isDoubleShot)
+            if (_isDoubleShot)
             {
                 PlayerController.instance._DoubleShotActive = true;
             }

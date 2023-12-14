@@ -1,0 +1,72 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &5595267765364664944
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5420899271045660623}
+  - component: {fileID: 797839091615942613}
+  m_Layer: 0
+  m_Name: WaveSpawnPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5420899271045660623
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5595267765364664944}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 4.78, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &797839091615942613
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5595267765364664944}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf316ded92bfcc54b979c3351056b81a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _waves:
+  - _timeToSpawn: 10
+    _theWave: {fileID: 69161084589810210, guid: aed98c3b3b54a8e4fa53735dfd7dac9d, type: 3}
+  - _timeToSpawn: 10
+    _theWave: {fileID: 1331913730840830793, guid: 181c17e4970c26c49bf746dd2883d1c3, type: 3}
+  - _timeToSpawn: 10
+    _theWave: {fileID: -8111491579377865762, guid: 3d864e7340d645d4ba9ce6558c22baf9, type: 3}
+  - _timeToSpawn: 10
+    _theWave: {fileID: 4104468983268216278, guid: 1212f6717853d2343b70257bf9eb13f5, type: 3}
+  - _timeToSpawn: 10
+    _theWave: {fileID: 4230528023978788544, guid: 1fea94e91fa9a01418c8cbe6873faa09, type: 3}
+  - _timeToSpawn: 10
+    _theWave: {fileID: 69161084589810210, guid: aed98c3b3b54a8e4fa53735dfd7dac9d, type: 3}
+  - _timeToSpawn: 10
+    _theWave: {fileID: 1331913730840830793, guid: 181c17e4970c26c49bf746dd2883d1c3, type: 3}
+  - _timeToSpawn: 10
+    _theWave: {fileID: -8111491579377865762, guid: 3d864e7340d645d4ba9ce6558c22baf9, type: 3}
+  - _timeToSpawn: 10
+    _theWave: {fileID: 4104468983268216278, guid: 1212f6717853d2343b70257bf9eb13f5, type: 3}
+  - _timeToSpawn: 10
+    _theWave: {fileID: 4230528023978788544, guid: 1fea94e91fa9a01418c8cbe6873faa09, type: 3}
+  - _timeToSpawn: 20
+    _theWave: {fileID: 6758854862262047410, guid: 6e385452a56a9404787cb037a1bc4160, type: 3}
+  _currentWave: 0
+  _canSpawnWaves: 1
+  _timeToNextWave: 0

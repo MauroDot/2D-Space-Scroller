@@ -25,6 +25,8 @@ public class PlayerController : MonoBehaviour
     public bool _DoubleShotActive;
     public float doubleShotOffset;
 
+    public bool _stopMovement;
+
     private void Awake()
     {
         instance = this;
@@ -36,29 +38,13 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
-        _theRB.velocity = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical")) * _moveSpeed;
-
-        transform.position = new Vector3(Mathf.Clamp(transform.position.x, bottomLeftLimit.position.x, topRightLimit.position.x), Mathf.Clamp(transform.position.y, bottomLeftLimit.position.y, topRightLimit.position.y), transform.position.z);
-
-        if(Input.GetButtonDown("Fire1"))
+        if(!_stopMovement)
         {
-            if(!_DoubleShotActive)
-            {
-                Instantiate(_shot, _shotPoint.position, _shotPoint.rotation);
-            }
-            else
-            {
-                Instantiate(_shot, _shotPoint.position + new Vector3(0f,doubleShotOffset, 0f), _shotPoint.rotation);
-                Instantiate(_shot, _shotPoint.position - new Vector3(0f, doubleShotOffset, 0f), _shotPoint.rotation);
-            }
+            _theRB.velocity = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical")) * _moveSpeed;
 
-            _shotCounter = _timeBetweenShots;
-        }
+            transform.position = new Vector3(Mathf.Clamp(transform.position.x, bottomLeftLimit.position.x, topRightLimit.position.x), Mathf.Clamp(transform.position.y, bottomLeftLimit.position.y, topRightLimit.position.y), transform.position.z);
 
-        if (Input.GetButton("Fire1"))
-        {
-            _shotCounter -= Time.deltaTime;
-            if (_shotCounter <= 0)
+            if (Input.GetButtonDown("Fire1"))
             {
                 if (!_DoubleShotActive)
                 {
@@ -69,18 +55,38 @@ public class PlayerController : MonoBehaviour
                     Instantiate(_shot, _shotPoint.position + new Vector3(0f, doubleShotOffset, 0f), _shotPoint.rotation);
                     Instantiate(_shot, _shotPoint.position - new Vector3(0f, doubleShotOffset, 0f), _shotPoint.rotation);
                 }
-                _shotCounter = _timeBetweenShots;
-            }          
-        }
 
-        if(_boostCounter > 0)
-        {
-            _boostCounter -= Time.deltaTime;
-            if(_boostCounter <= 0)
+                _shotCounter = _timeBetweenShots;
+            }
+
+            if (Input.GetButton("Fire1"))
             {
-                _moveSpeed = _normalSpeed;
+                _shotCounter -= Time.deltaTime;
+                if (_shotCounter <= 0)
+                {
+                    if (!_DoubleShotActive)
+                    {
+                        Instantiate(_shot, _shotPoint.position, _shotPoint.rotation);
+                    }
+                    else
+                    {
+                        Instantiate(_shot, _shotPoint.position + new Vector3(0f, doubleShotOffset, 0f), _shotPoint.rotation);
+                        Instantiate(_shot, _shotPoint.position - new Vector3(0f, doubleShotOffset, 0f), _shotPoint.rotation);
+                    }
+                    _shotCounter = _timeBetweenShots;
+                }
+            }
+
+            if (_boostCounter > 0)
+            {
+                _boostCounter -= Time.deltaTime;
+                if (_boostCounter <= 0)
+                {
+                    _moveSpeed = _normalSpeed;
+                }
             }
         }
+        
     }
     public void ApplyExternalForce(Vector2 force)
     {

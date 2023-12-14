@@ -27,7 +27,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.726, y: 0.726, z: 0.726}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 3250734054848793655}
@@ -73,8 +73,8 @@ Transform:
   m_GameObject: {fileID: 5156673672800013986}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 4, y: 4, z: 1}
+  m_LocalPosition: {x: -0.00000047684, y: 0.00000042003, z: 0}
+  m_LocalScale: {x: 9.507288, y: 9.507288, z: 2.376822}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3250734054848793655}
@@ -220,8 +220,8 @@ Transform:
   m_GameObject: {fileID: 8917561188597978687}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2.5, y: 2.5, z: 1}
+  m_LocalPosition: {x: -0.00000047684, y: 0.00000040233, z: 0}
+  m_LocalScale: {x: 7.35983, y: 7.35983, z: 2.9439318}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 410054792946103229}
@@ -313,7 +313,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.6354167
+  m_Radius: 0.07
 --- !u!114 &6812735418754283922
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -407,6 +407,22 @@ PrefabInstance:
     - target: {fileID: 2392692077483985606, guid: 795797957e6e0dd46a51351d1958b68f, type: 3}
       propertyPath: InitialModule.maxNumParticles
       value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 2392692077483985606, guid: 795797957e6e0dd46a51351d1958b68f, type: 3}
+      propertyPath: InitialModule.startSize.scalar
+      value: 0.24
+      objectReference: {fileID: 0}
+    - target: {fileID: 4849853819868927197, guid: 795797957e6e0dd46a51351d1958b68f, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.6919764
+      objectReference: {fileID: 0}
+    - target: {fileID: 4849853819868927197, guid: 795797957e6e0dd46a51351d1958b68f, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.6919764
+      objectReference: {fileID: 0}
+    - target: {fileID: 4849853819868927197, guid: 795797957e6e0dd46a51351d1958b68f, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 2.306588
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

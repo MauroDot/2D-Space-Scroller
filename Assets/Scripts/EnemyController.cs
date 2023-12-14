@@ -35,13 +35,13 @@ public class EnemyController : MonoBehaviour
     {
         //transform.position -= new Vector3(_moveSpeed * Time.deltaTime, 0f, 0f);
 
-        if(!_shouldChangeDirection)
+        if (!_shouldChangeDirection)
         {
             transform.position += new Vector3(_startDirection.x * _moveSpeed * Time.deltaTime, _startDirection.y * _moveSpeed * Time.deltaTime, 0f);
         }
         else
         {
-            if(transform.position.x > _changeDirectionXPoint)
+            if (transform.position.x > _changeDirectionXPoint)
             {
                 transform.position += new Vector3(_startDirection.x * _moveSpeed * Time.deltaTime, _startDirection.y * _moveSpeed * Time.deltaTime, 0f);
             }
@@ -51,7 +51,7 @@ public class EnemyController : MonoBehaviour
             }
         }
 
-        if(_allowShooting)
+        if (_allowShooting)
         {
             _shotCounter -= Time.deltaTime;
             if (_shotCounter <= 0)
@@ -59,23 +59,23 @@ public class EnemyController : MonoBehaviour
                 _shotCounter = _timeBetweenShots;
                 Instantiate(_shotToFire, _firePoint.position, _firePoint.rotation);
             }
-        }       
+        }
     }
 
     public void DamageEnemy()
     {
         _currentHealth--;
-        if(_currentHealth <= 0)
+        if (_currentHealth <= 0)
         {
             GameManager.instance.AddScore(_scoreValue);
 
             int randomCahnce = Random.Range(0, 100);
-            if(randomCahnce < _powerupDropRate)
+            if (randomCahnce < _powerupDropRate)
             {
                 int randomPick = Random.Range(0, _powerUps.Length);
                 Instantiate(_powerUps[randomPick], transform.position, transform.rotation);
             }
-            
+
             Destroy(gameObject);
             Instantiate(_deathEffect, transform.position, transform.rotation);
         }
@@ -86,7 +86,7 @@ public class EnemyController : MonoBehaviour
     }
     private void OnBecameVisible()
     {
-        if(_canShoot)
+        if (_canShoot)
         {
             _allowShooting = true;
         }

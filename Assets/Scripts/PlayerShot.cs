@@ -10,7 +10,7 @@ public class PlayerShot : MonoBehaviour
     public GameObject _objectExplosion;
     void Start()
     {
-        
+
     }
     void Update()
     {
@@ -20,7 +20,7 @@ public class PlayerShot : MonoBehaviour
     {
         Instantiate(_impactEffect, transform.position, transform.rotation);
 
-        if(other.tag == "Space Object")
+        if (other.tag == "Space Object")
         {
             Instantiate(_objectExplosion, other.transform.position, other.transform.rotation);
 
@@ -29,7 +29,7 @@ public class PlayerShot : MonoBehaviour
             GameManager.instance.AddScore(10);
         }
 
-        if(other.tag == "Enemy")
+        if (other.tag == "Enemy")
         {
             other.GetComponent<EnemyController>().DamageEnemy();
         }
