@@ -34,6 +34,11 @@ public class PlayerShot : MonoBehaviour
             other.GetComponent<EnemyController>().DamageEnemy();
         }
 
+        if(other.tag == "Boss")
+        {
+            BossManager.instnace.HurBoss();
+        }
+
         Destroy(this.gameObject);
     }
 
