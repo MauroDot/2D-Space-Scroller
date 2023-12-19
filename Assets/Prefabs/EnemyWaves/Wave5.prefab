@@ -164,7 +164,7 @@ MonoBehaviour:
   _changedDirection: {x: -0.5, y: 0.5}
   _shotToFire: {fileID: 7788343238093272032, guid: 39d32c5a4af0014428769c43d4ebd17e, type: 3}
   _firePoint: {fileID: 929854969153979178}
-  _timeBetweenShots: 1
+  _timeBetweenShots: 3
   _canShoot: 1
   _currentHealth: 5
   _deathEffect: {fileID: 3693241669437665348, guid: 96166b6522230b249b7ceb500da1a3ab, type: 3}
@@ -400,7 +400,7 @@ MonoBehaviour:
   _changedDirection: {x: -0.8, y: -0.5}
   _shotToFire: {fileID: 7788343238093272032, guid: 39d32c5a4af0014428769c43d4ebd17e, type: 3}
   _firePoint: {fileID: 633897904614113050}
-  _timeBetweenShots: 2
+  _timeBetweenShots: 1
   _canShoot: 1
   _currentHealth: 5
   _deathEffect: {fileID: 3693241669437665348, guid: 96166b6522230b249b7ceb500da1a3ab, type: 3}
@@ -574,7 +574,7 @@ MonoBehaviour:
   _changedDirection: {x: -0.5, y: 0.5}
   _shotToFire: {fileID: 7788343238093272032, guid: 39d32c5a4af0014428769c43d4ebd17e, type: 3}
   _firePoint: {fileID: 3193655576518571436}
-  _timeBetweenShots: 1
+  _timeBetweenShots: 2
   _canShoot: 1
   _currentHealth: 5
   _deathEffect: {fileID: 3693241669437665348, guid: 96166b6522230b249b7ceb500da1a3ab, type: 3}
@@ -779,7 +779,7 @@ MonoBehaviour:
   _changedDirection: {x: -0.8, y: 0}
   _shotToFire: {fileID: 7788343238093272032, guid: 39d32c5a4af0014428769c43d4ebd17e, type: 3}
   _firePoint: {fileID: 3178218646921858899}
-  _timeBetweenShots: 1
+  _timeBetweenShots: 2
   _canShoot: 1
   _currentHealth: 5
   _deathEffect: {fileID: 3693241669437665348, guid: 96166b6522230b249b7ceb500da1a3ab, type: 3}
@@ -1015,7 +1015,7 @@ MonoBehaviour:
   _changedDirection: {x: -0.8, y: 0.5}
   _shotToFire: {fileID: 7788343238093272032, guid: 39d32c5a4af0014428769c43d4ebd17e, type: 3}
   _firePoint: {fileID: 2485671989535626279}
-  _timeBetweenShots: 2
+  _timeBetweenShots: 3
   _canShoot: 1
   _currentHealth: 5
   _deathEffect: {fileID: 3693241669437665348, guid: 96166b6522230b249b7ceb500da1a3ab, type: 3}
@@ -1189,7 +1189,7 @@ MonoBehaviour:
   _changedDirection: {x: -0.5, y: -0.5}
   _shotToFire: {fileID: 7788343238093272032, guid: 39d32c5a4af0014428769c43d4ebd17e, type: 3}
   _firePoint: {fileID: 5904795995960935589}
-  _timeBetweenShots: 1
+  _timeBetweenShots: 4
   _canShoot: 1
   _currentHealth: 5
   _deathEffect: {fileID: 3693241669437665348, guid: 96166b6522230b249b7ceb500da1a3ab, type: 3}
@@ -1363,7 +1363,7 @@ MonoBehaviour:
   _changedDirection: {x: -0.8, y: -0.5}
   _shotToFire: {fileID: 7788343238093272032, guid: 39d32c5a4af0014428769c43d4ebd17e, type: 3}
   _firePoint: {fileID: 5170574998777637218}
-  _timeBetweenShots: 2
+  _timeBetweenShots: 2.5
   _canShoot: 1
   _currentHealth: 5
   _deathEffect: {fileID: 3693241669437665348, guid: 96166b6522230b249b7ceb500da1a3ab, type: 3}
@@ -1568,7 +1568,7 @@ MonoBehaviour:
   _changedDirection: {x: -0.8, y: 0}
   _shotToFire: {fileID: 7788343238093272032, guid: 39d32c5a4af0014428769c43d4ebd17e, type: 3}
   _firePoint: {fileID: 8929928160925276599}
-  _timeBetweenShots: 1
+  _timeBetweenShots: 4.5
   _canShoot: 1
   _currentHealth: 5
   _deathEffect: {fileID: 3693241669437665348, guid: 96166b6522230b249b7ceb500da1a3ab, type: 3}
@@ -1773,7 +1773,7 @@ MonoBehaviour:
   _changedDirection: {x: -0.8, y: 0.5}
   _shotToFire: {fileID: 7788343238093272032, guid: 39d32c5a4af0014428769c43d4ebd17e, type: 3}
   _firePoint: {fileID: 5773940988525145644}
-  _timeBetweenShots: 2
+  _timeBetweenShots: 5
   _canShoot: 1
   _currentHealth: 5
   _deathEffect: {fileID: 3693241669437665348, guid: 96166b6522230b249b7ceb500da1a3ab, type: 3}
@@ -1947,7 +1947,7 @@ MonoBehaviour:
   _changedDirection: {x: -0.5, y: 0}
   _shotToFire: {fileID: 7788343238093272032, guid: 39d32c5a4af0014428769c43d4ebd17e, type: 3}
   _firePoint: {fileID: 7727515558418628505}
-  _timeBetweenShots: 1
+  _timeBetweenShots: 3.5
   _canShoot: 1
   _currentHealth: 5
   _deathEffect: {fileID: 3693241669437665348, guid: 96166b6522230b249b7ceb500da1a3ab, type: 3}
@@ -2152,7 +2152,7 @@ MonoBehaviour:
   _changedDirection: {x: -0.8, y: 0}
   _shotToFire: {fileID: 7788343238093272032, guid: 39d32c5a4af0014428769c43d4ebd17e, type: 3}
   _firePoint: {fileID: 3220334555359031482}
-  _timeBetweenShots: 2
+  _timeBetweenShots: 6.5
   _canShoot: 1
   _currentHealth: 5
   _deathEffect: {fileID: 3693241669437665348, guid: 96166b6522230b249b7ceb500da1a3ab, type: 3}
@@ -2624,7 +2624,7 @@ MonoBehaviour:
   _changedDirection: {x: -0.5, y: -0.5}
   _shotToFire: {fileID: 7788343238093272032, guid: 39d32c5a4af0014428769c43d4ebd17e, type: 3}
   _firePoint: {fileID: 3158065068807658341}
-  _timeBetweenShots: 1
+  _timeBetweenShots: 5
   _canShoot: 1
   _currentHealth: 5
   _deathEffect: {fileID: 3693241669437665348, guid: 96166b6522230b249b7ceb500da1a3ab, type: 3}
@@ -2798,7 +2798,7 @@ MonoBehaviour:
   _changedDirection: {x: -0.5, y: -0.5}
   _shotToFire: {fileID: 7788343238093272032, guid: 39d32c5a4af0014428769c43d4ebd17e, type: 3}
   _firePoint: {fileID: 1180838816836934700}
-  _timeBetweenShots: 1
+  _timeBetweenShots: 4
   _canShoot: 1
   _currentHealth: 5
   _deathEffect: {fileID: 3693241669437665348, guid: 96166b6522230b249b7ceb500da1a3ab, type: 3}
@@ -3003,7 +3003,7 @@ MonoBehaviour:
   _changedDirection: {x: -0.8, y: 0}
   _shotToFire: {fileID: 7788343238093272032, guid: 39d32c5a4af0014428769c43d4ebd17e, type: 3}
   _firePoint: {fileID: 4436652023057059831}
-  _timeBetweenShots: 2
+  _timeBetweenShots: 3
   _canShoot: 1
   _currentHealth: 5
   _deathEffect: {fileID: 3693241669437665348, guid: 96166b6522230b249b7ceb500da1a3ab, type: 3}
@@ -3536,7 +3536,7 @@ MonoBehaviour:
   _changedDirection: {x: -0.8, y: 0.5}
   _shotToFire: {fileID: 7788343238093272032, guid: 39d32c5a4af0014428769c43d4ebd17e, type: 3}
   _firePoint: {fileID: 925352106253395502}
-  _timeBetweenShots: 2
+  _timeBetweenShots: 7
   _canShoot: 1
   _currentHealth: 5
   _deathEffect: {fileID: 3693241669437665348, guid: 96166b6522230b249b7ceb500da1a3ab, type: 3}

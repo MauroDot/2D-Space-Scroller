@@ -78,7 +78,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3214240848420487608, guid: c572a8b2d7c16f74fa5ea2f542f8c307, type: 3}
       propertyPath: _timeBetweenShots
-      value: 6
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3214240848420487608, guid: c572a8b2d7c16f74fa5ea2f542f8c307, type: 3}
       propertyPath: _changedDirection.y
@@ -320,7 +320,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3214240848420487608, guid: c572a8b2d7c16f74fa5ea2f542f8c307, type: 3}
       propertyPath: _timeBetweenShots
-      value: 6
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3214240848420487608, guid: c572a8b2d7c16f74fa5ea2f542f8c307, type: 3}
       propertyPath: _changedDirection.y
@@ -402,7 +402,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3214240848420487608, guid: c572a8b2d7c16f74fa5ea2f542f8c307, type: 3}
       propertyPath: _timeBetweenShots
-      value: 6
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3214240848420487608, guid: c572a8b2d7c16f74fa5ea2f542f8c307, type: 3}
       propertyPath: _changedDirection.y
@@ -484,7 +484,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3214240848420487608, guid: c572a8b2d7c16f74fa5ea2f542f8c307, type: 3}
       propertyPath: _timeBetweenShots
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3214240848420487608, guid: c572a8b2d7c16f74fa5ea2f542f8c307, type: 3}
       propertyPath: _changedDirection.y
@@ -566,7 +566,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3214240848420487608, guid: c572a8b2d7c16f74fa5ea2f542f8c307, type: 3}
       propertyPath: _timeBetweenShots
-      value: 4
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3214240848420487608, guid: c572a8b2d7c16f74fa5ea2f542f8c307, type: 3}
       propertyPath: _changeDirectionXPoint
@@ -644,7 +644,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3214240848420487608, guid: c572a8b2d7c16f74fa5ea2f542f8c307, type: 3}
       propertyPath: _timeBetweenShots
-      value: 6
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3214240848420487608, guid: c572a8b2d7c16f74fa5ea2f542f8c307, type: 3}
       propertyPath: _changedDirection.y
@@ -726,7 +726,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3214240848420487608, guid: c572a8b2d7c16f74fa5ea2f542f8c307, type: 3}
       propertyPath: _timeBetweenShots
-      value: 6
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3214240848420487608, guid: c572a8b2d7c16f74fa5ea2f542f8c307, type: 3}
       propertyPath: _changedDirection.y
@@ -968,7 +968,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3214240848420487608, guid: c572a8b2d7c16f74fa5ea2f542f8c307, type: 3}
       propertyPath: _timeBetweenShots
-      value: 6
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 3214240848420487608, guid: c572a8b2d7c16f74fa5ea2f542f8c307, type: 3}
       propertyPath: _changedDirection.y

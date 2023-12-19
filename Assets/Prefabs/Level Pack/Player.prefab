@@ -133,14 +133,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cbfb5add83dfbf44f8e7d2d7812a3877, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _moveSpeed: 5
+  _moveSpeed: 6
   _theRB: {fileID: 5220610009877185456}
   bottomLeftLimit: {fileID: 0}
   topRightLimit: {fileID: 0}
   _shotPoint: {fileID: 7549854862553074042}
   _shot: {fileID: 4415740856552439684, guid: 39caf485fabf8a0419509abb251f4639, type: 3}
-  _timeBetweenShots: 0.13
-  _boostSpeed: 8
+  _timeBetweenShots: 0.12
+  _boostSpeed: 9
   _boostTime: 3.5
   _DoubleShotActive: 0
   doubleShotOffset: 0.2
@@ -157,8 +157,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f174c706ac16f1a46928bf97a418b51a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _currentHealth: 0
-  _maxHealth: 3
+  _currentHealth: 20
+  _maxHealth: 20
   _deathEffect: {fileID: 210971239670690142, guid: abc983efd433850408b90dd36bdd9563, type: 3}
   _invincibilityTime: 3
   _theSR: {fileID: 3159425463782175433}

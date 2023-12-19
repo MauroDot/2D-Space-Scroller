@@ -36,7 +36,7 @@ public class PlayerShot : MonoBehaviour
 
         if(other.tag == "Boss")
         {
-            BossManager.instnace.HurBoss();
+            BossManager.instnace.HurtBoss();
         }
 
         Destroy(this.gameObject);

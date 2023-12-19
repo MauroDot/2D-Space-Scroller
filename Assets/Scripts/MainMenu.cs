@@ -24,4 +24,10 @@ public class MainMenu : MonoBehaviour
     {
         Application.Quit();
     }
+    public void ClearScore()
+    {
+        PlayerPrefs.DeleteKey("HighScore");
+        PlayerPrefs.DeleteKey("CurrentScore");
+        // You can add any other PlayerPrefs keys you want to clear here
+    }
 }

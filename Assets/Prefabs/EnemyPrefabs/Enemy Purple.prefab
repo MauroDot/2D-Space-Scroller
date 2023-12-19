@@ -197,7 +197,7 @@ MonoBehaviour:
   _firePoint: {fileID: 4061260656026381732}
   _timeBetweenShots: 4
   _canShoot: 1
-  _currentHealth: 3
+  _currentHealth: 5
   _deathEffect: {fileID: 3693241669437665348, guid: 96166b6522230b249b7ceb500da1a3ab, type: 3}
   _scoreValue: 100
   _powerUps:

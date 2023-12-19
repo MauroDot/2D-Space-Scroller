@@ -23,6 +23,9 @@ public class GameManager : MonoBehaviour
 
     private bool _canPause;
 
+    private bool _gameOver;
+    private float _countdownTimer = 5f; // Adjust the countdown duration as needed
+    public string _mainMenuName = "Menu";
     private void Awake()
     {
         instance = this;
@@ -32,13 +35,11 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
-        _currentLives = PlayerPrefs.GetInt("CurrentLives");
+        _currentLives = PlayerPrefs.GetInt("CurrentLives", 3); // Default to 3 lives if not set
         UIManager.instance._livesText.text = "x " + _currentLives;
 
         highScore = PlayerPrefs.GetInt("HighScore", 0); // Initialize highScore from PlayerPrefs, defaulting to 0
-
-        // Reset the current score to 0 at the start of a new game
-        currentScore = 0;
+        currentScore = PlayerPrefs.GetInt("CurrentScore", 0); // Load the current score
 
         UIManager.instance._hiScoreText.text = "Hi-Score: " + highScore;
         UIManager.instance._scoreText.text = "Score: " + currentScore;
@@ -52,8 +53,17 @@ public class GameManager : MonoBehaviour
         {
             PlayerController.instance.transform.position += new Vector3(PlayerController.instance._boostSpeed * Time.deltaTime, 0f, 0f);
         }
+        
+        if (_gameOver)
+        {
+            _countdownTimer -= Time.deltaTime;
+            if (_countdownTimer <= 0f)
+            {
+                ReturnToMainMenu();
+            }
+        }
 
-        if(Input.GetKeyDown(KeyCode.Escape) && _canPause)
+        if (Input.GetKeyDown(KeyCode.Escape) && _canPause)
         {
             PauseUnpause();
         }
@@ -63,7 +73,7 @@ public class GameManager : MonoBehaviour
         _currentLives--;
         UIManager.instance._livesText.text = "x " + _currentLives;
 
-        if(_currentLives > 0)
+        if (_currentLives > 0)
         {
             StartCoroutine(RespawnCO());
         }
@@ -71,11 +81,13 @@ public class GameManager : MonoBehaviour
         {
             UIManager.instance._gameOverScreen.SetActive(true);
             WaveManager.instance._canSpawnWaves = false;
-
             MusicController.instance.PlayGameOver();
+
             PlayerPrefs.SetInt("HighScore", highScore);
 
             _canPause = false;
+
+            _gameOver = true; // Set the game over flag
         }
     }
     public IEnumerator RespawnCO()
@@ -108,6 +120,9 @@ public class GameManager : MonoBehaviour
             // Disable the notice if the current score is not higher than the stored high score
             UIManager.instance.highScoreNotice.SetActive(false);
         }
+
+        // Save the current score
+        PlayerPrefs.SetInt("CurrentScore", currentScore);
     }
     public IEnumerator EndLevelCO()
     {
@@ -156,5 +171,9 @@ public class GameManager : MonoBehaviour
             Time.timeScale = 0f;
             PlayerController.instance._stopMovement = true;
         }
+    }
+    private void ReturnToMainMenu()
+    {
+        SceneManager.LoadScene(_mainMenuName);
     }
 }
