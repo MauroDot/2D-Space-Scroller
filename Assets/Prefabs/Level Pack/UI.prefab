@@ -807,7 +807,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 50.5, y: 50.5}
+  m_AnchoredPosition: {x: 50, y: 50.5}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1609245001377977314
@@ -1211,7 +1211,7 @@ MonoBehaviour:
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
+    m_VerticalOverflow: 1
     m_LineSpacing: 1
   m_Text: Level Complete
 --- !u!114 &8266377493120909017
@@ -1861,7 +1861,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 291.82376, y: -28.083496}
+  m_AnchoredPosition: {x: 292, y: -28}
   m_SizeDelta: {x: 575.4808, y: 46.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6495533444359031940
@@ -3570,7 +3570,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 1130.9144, y: -28.083496}
+  m_AnchoredPosition: {x: 1131, y: -28}
   m_SizeDelta: {x: 297.2996, y: 46.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7618746387463317984
@@ -4160,7 +4160,7 @@ MonoBehaviour:
   m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 1280, y: 720}
+  m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
@@ -4558,11 +4558,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2759620317516982849, guid: 4c4cd4f4993e33d4fa6062a3fd6b49e7, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3711372702264280791, guid: 4c4cd4f4993e33d4fa6062a3fd6b49e7, type: 3}
       propertyPath: m_Name
       value: Boss_Health_Slider
+      objectReference: {fileID: 0}
+    - target: {fileID: 3711372702264280791, guid: 4c4cd4f4993e33d4fa6062a3fd6b49e7, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
